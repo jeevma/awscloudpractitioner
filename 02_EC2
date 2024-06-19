@@ -1,0 +1,55 @@
+### Amazon EC2 Cheat Sheet
+
+#### Overview
+- **EC2 (Elastic Compute Cloud)**: Infrastructure as a Service (IaaS) offering from AWS, allowing you to rent virtual machines and storage, distribute load, and scale using auto-scaling groups.
+
+#### Key Features
+- **Rent Virtual Machines**: Known as EC2 instances.
+- **Storage Options**: Elastic Block Store (EBS) for virtual drives.
+- **Load Balancing**: Elastic Load Balancer (ELB) to distribute traffic.
+- **Auto-Scaling**: Auto-scaling groups (ASG) to manage scaling.
+
+#### EC2 Sizing & Configuration
+- **Operating System**: Linux, Windows, or Mac OS.
+- **Compute Power & Cores**: Customize the CPU.
+- **Memory**: Select the amount of RAM.
+- **Storage Space**: 
+  - **EBS**: Network-attached storage.
+  - **Instance Store**: Physical hardware storage.
+- **Network**: Speed, Public IP address, and security group configurations.
+- **Bootstrap Script**: EC2 User Data to run initial setup commands.
+
+#### EC2 User Data
+- **Bootstrapping**: Automate tasks at startup (e.g., installing updates, software, downloading files).
+- **Runs as Root**: Only executes once at the first launch of the instance.
+
+#### Launching an EC2 Instance
+- **AWS Console**: Use to launch virtual servers, configure parameters, and manage instances (start/stop/terminate).
+
+#### EC2 Instance Connectivity
+- **SSH Access**: Securely connect to your instance using SSH (Windows users can use Putty).
+- **EC2 Instance Connect**: Connect via browser without a key file (only for Amazon Linux 2).
+
+#### EC2 Instance Purchasing Options
+- **On-Demand**: Pay by the second or hour without upfront cost.
+- **Reserved Instances**: Up to 72% discount for 1 or 3-year commitments, with flexible payment options.
+- **Savings Plans**: Commit to usage amount for 1 or 3 years, flexible across instance families.
+- **Spot Instances**: Bid for unused capacity with potential savings, but instances can be terminated anytime.
+- **Dedicated Hosts**: Physical servers for isolated workloads.
+- **Dedicated Instances**: Instances on hardware dedicated to a single customer.
+- **Capacity Reservations**: Reserve capacity within an Availability Zone.
+
+#### Storage Options
+- **EBS (Elastic Block Store)**: Network-attached storage volumes.
+- **EFS (Elastic File System)**: Managed NFS for Linux instances, scalable and multi-AZ.
+- **Instance Store**: Temporary storage on physical disks attached to the host machine.
+- **FSx**: Managed 3rd party file systems (e.g., Lustre, Windows File Server, NetApp ONTAP).
+
+#### Best Practices
+- **Use Reserved Instances for predictable workloads**: Ensure cost savings over time.
+- **On-Demand Instances for flexibility**: Ideal for short-term or unpredictable workloads.
+- **Spot Instances for cost savings on interruptible workloads**: Take advantage of spare capacity pricing.
+- **Secure your instances**: Configure security groups and use SSH keys for secure access.
+- **Automate with EC2 User Data**: Set up instances automatically at launch.
+
+This cheat sheet provides a concise overview of Amazon EC2, covering its main features, configuration options, connectivity, purchasing plans, and best practices for use【6:1†source】【6:3†source】【6:4†source】.
