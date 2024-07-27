@@ -137,9 +137,7 @@ These tables cover the services you'll need to understand for the AWS Certified 
 | **Service** | **Description** | **Details** |
 |-------------|-----------------|-------------|
 | AWS Auto Scaling | Automatically adjusts resources to maintain performance and cost | Monitors applications and adjusts capacity to maintain steady, predictable performance |
-| AWS Cloud
-
-Formation | Infrastructure as code service | Creates and manages AWS resources using templates |
+| AWS CloudFormation | Infrastructure as code service | Creates and manages AWS resources using templates |
 | AWS CloudTrail | Logs and monitors account activity | Provides governance, compliance, and operational and risk auditing |
 | Amazon CloudWatch | Monitoring and management service | Collects and visualizes real-time logs, metrics, and event data |
 | AWS Compute Optimizer | Recommends optimal AWS resources | Analyzes resource usage and recommends cost-effective and performant resources |
